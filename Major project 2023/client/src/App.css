@@ -1,0 +1,232 @@
+.App {
+  text-align: center;
+  display: flex;
+  height: 100%;
+  height: 100vh;
+}
+
+.right_box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 35%;
+  justify-self: center;
+  border: 2px solid white;
+  /* align-self: flex-end; */
+}
+
+.image_box {
+  border: 4px solid white;
+  height: 500px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.61); */
+  backdrop-filter: blur(100px);
+  color: black;
+}
+
+.image{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.left_down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.left_box {
+  height: 100%;
+  position: relative;
+  width: 65%;
+  flex: 4;
+  justify-self: center;
+  /* align-self: flex-end; */
+}
+
+.App h1 {
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #000000 50%, #3f3f3f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+  /* border: 5px solid red; */
+  overflow: hidden;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 85% 85% / 30%;
+}
+
+header .overlay {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient(135deg, #9f05ff69 10%, #fd5e086b 100%);
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.right_up {
+  margin-top: 100px;
+  height: 80%;
+  align-content: center;
+}
+
+.right_down {
+  display: flex;
+  height: 20%;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  align-self: last baseline;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+
+.share {
+  padding: 16px;
+  margin-top: 10px;
+  vertical-align: center;
+  background: #f44336;
+  width: 70px;
+  height: 45px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: -1;
+}
+
+.share:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
